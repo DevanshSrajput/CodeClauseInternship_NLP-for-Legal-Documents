@@ -28,12 +28,61 @@ cd legalease
 ```
 ### Step 2: Create a virtual environment (VERY IMPORTANT)
 # For Windows wizards
+```
 python -m venv venv
 venv\Scripts\activate
-
+```
 # For Linux/Mac sorcerers
+
+```
 python3 -m venv venv
 source venv/bin/activate
-
+```
 ### Step 3: Install the magical dependencies
+```
 pip install -r requirements.txt
+```
+### Step 4: Download the required language model
+```
+python -m spacy download en_core_web_lg
+```
+### 🚀 Launch Your Legal Assistant
+```
+streamlit run app.py
+```
+Navigate to http://localhost:8501 and behold your new legal assistant!
+
+## 📂 Project Structure (For the Curious Minds)
+```
+legalease/
+├── app.py                  # The main spell (Streamlit application)
+├── pages/                  # Different magical chambers (Streamlit pages)
+│   ├── 1_Upload.py         # For summoning new documents
+│   ├── 2_Document_View.py  # For studying the ancient texts
+│   └── 3_About.py          # The lore behind our magic
+├── backend/                # Where the real magic happens
+│   ├── processors/         # Document processing spells
+│   └── database/           # Document storage enchantments
+├── data/                   # Your growing collection of legal scrolls
+│   ├── documents/          # The original texts
+│   └── analyses/           # The decoded wisdom
+└── requirements.txt        # The list of magical ingredients
+```
+## 🧙‍♂️ Using Your New Legal Assistant
+1. Upload: Summon your legal documents through the portal
+2. Process: Cast the processing spell with a single click
+3. Analyze: Observe as the AI reads the document and reveals its secrets
+4. Review: Explore summaries, key clauses, and entities extracted from the document
+## 🔮 Technical Magic Behind the Scenes
+- **Python:** The primary magical language
+- **Streamlit:** For crafting our user-friendly interface
+- **spaCy:** For understanding the human language of law
+- **Transformers (BART):** For summarizing even the most verbose legal jargon
+- **PyMuPDF & python-docx:** For deciphering various document formats
+## 🛑 How to Stop the Magic
+When you're done with your legal wizardry, simply press ```Ctrl+C``` in your terminal window or close the terminal to shut down the server.
+## ⚠️ Warning for Apprentice Wizards
+This tool is for educational and informational purposes only. While it can help you understand legal documents, it's not a replacement for a professional legal wizard (lawyer). Always consult with qualified legal professionals for important matters!
+#### ***"The first rule of Fight Club is... wait, wrong document. The first rule of LegalEase is to make legal documents less painful!"***
+
+Happy analyzing! 📜⚖️✨
