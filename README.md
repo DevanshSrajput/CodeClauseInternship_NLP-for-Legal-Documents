@@ -10,6 +10,11 @@
 
 LegalEase is your magical companion for navigating the arcane texts of the legal realm! Upload your contracts, agreements, and court filings, then watch as our AI extracts the secrets hidden within - summaries, key clauses, and important entities, all without the need for expensive legal potions!
 
+## Sample Video:
+```
+ https://drive.google.com/file/d/1XUtM_4KlBlZNUr0qQzCdU3lgspI9AQkK/view?usp=sharing
+```
+
 ## ✨ Features That'll Make Your Paralegal Jealous
 
 - 📝 **Document Scanning**: Extracts text from PDFs, DOCX, and TXT files faster than a law student on coffee
